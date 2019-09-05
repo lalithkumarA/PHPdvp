@@ -6,7 +6,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "root";
-$dbname = "sarathi343";
+$dbname = "phpdev";
 
 // echo "<pre>";
 // Create connection

@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "root";
-$dbname = "sarathi343";
+$dbname = "phpdev";
 $id = $_GET['id'];
 
 // Create connection

@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "root";
-$dbname = "sarathi343";
+$dbname = "phpdev";
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
@@ -13,7 +13,7 @@ $password1 = $_POST['password'];
 $contact = $_POST['contact'];
 
 if(isset($name) && !empty($name) && isset($email) && !empty($email)){
-	$sql="INSERT INTO user_login_stu(name,email,password,contact) VALUES ('$name','$email','$password1','$contact')";
+	$sql="INSERT INTO user_login_stu (name,email,password,contact) VALUES ('$name','$email','$password1','$contact')";
 	// exit;
 }
 
