@@ -2,4 +2,4 @@
 
 Create new database name and field insert in create table name + column name and type
 
-<img src="testing_page/PHPdvp_dp.png" width="500" height="300" >
+<img src="testing_page/PHPdvp_dp.png" width="400" height="200" ><img src="testing_page/PHPdvp_dp_table.png" width="400" height="200" >
