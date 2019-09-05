@@ -6,6 +6,27 @@ $dbname = "phpdev";
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
+ 
+//echo ("connection");
+//if (isset($_POST['login'])) {
+	//$email = $_POST['email'];
+	//$password1 = $_POST['password'];
+	//$query = "SELECT * FROM `user_login_stu` WHERE email='".$email."' and password='".$password1."'";
+	//$result = mysqli_query($conn, $query);
+	//if ($result) {
+		//while ($row=mysqli_fetch_array($result)) {
+		//	echo '<script type="text/javascript">alert("you are login successfully and you are logined as ' .$row['email'].'")</sript>';
+		//}
+		//if ($email=="email") {
+			
+			<!-- <script type="text/javascript"></script> -->
+		// } -->
+	//<!-- } -->
+//<!-- } -->
+
+
+
+
 
 $name = $_POST['name'];
 $email = $_POST['email'];
