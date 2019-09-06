@@ -20,7 +20,7 @@ $row = mysqli_fetch_array($results);
 
 <html lang="en">
    <head>
-     <title>Student Details</title>
+     <title>Student Course Details Edit</title>
      <link rel="stylesheet" type="text/css" href="../../../design/style.css">
      <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1">

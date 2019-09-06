@@ -16,7 +16,7 @@ $results = mysqli_query($conn, "SELECT * FROM classdpt");
 
 <html lang="en">
    <head>
-     <title>Student Details</title>
+     <title>Student Course Details View</title>
      <link rel="stylesheet" type="text/css" href="../../../design/style.css">
      <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1">
