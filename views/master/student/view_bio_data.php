@@ -13,6 +13,7 @@ $dbname = "phpdev";
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 
 $results = mysqli_query($conn, "SELECT * FROM student_data"); 
+// $sql = "SELECT * FROM student_data LIMIT 3";
 
 ?>
 

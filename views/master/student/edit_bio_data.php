@@ -82,7 +82,9 @@ $row = mysqli_fetch_array($results);
 	                  <option value="B+"<?php echo ($row['blood']=='B+')?'selected':'' ?>>B+</option>
 	                  <option value="B-"<?php echo ($row['blood']=='B-')?'selected':'' ?>>B-</option> 
 	                  <option value="AB+"<?php echo ($row['blood']=='AB+')?'selected':'' ?>>AB+</option>
-	                  <option value="AB-"<?php echo ($row['blood']=='AB-')?'selected':'' ?>>AB-</option> 
+	                  <option value="AB-"<?php echo ($row['blood']=='AB-')?'selected':'' ?>>AB-</option>
+	                  <!--this methode one use on -->
+	                 <!--  <option value="AB-"<?=$row['blood'] == 'AB-' ? ' selected="selected"' : '';?>>AB-</option> -->
 	               	</select>
 	            </div>
 			    <div class="form-group">
