@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+    <input type="text" id="a" class="in" value="0"/>
+    <input type="text" id="b" class="in" value="0"/>
+    <input type="text" id="c" class="out" value="0"/>
+</body>
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+/* MVC type implementation */
+
+/* Model */
+function Operand(a,b){
+  this.a = a;
+  this.b = b;
+  this.c = (this.a)/(this.b);
+    
+  this.set = function(key,edit){
+    this[key] = edit;
+    this.c = (this.a)/(this.b);  
+  };
+  return this;
+}
+
+$(function(){
+    var a = $("#a")
+        b = $("#b"),
+        c = $("#c");
+    var o = new Operand(parseInt(a.val()),parseInt(b.val()));
+    
+    /* Controller */
+    $(".in").on('keyup change',function(){
+        if($(this).val().length === 0){
+            c.val('');
+            o.set($(this).attr('id'),parseInt($(this).val()));
+        }
+        else{
+            o.set($(this).attr('id'),parseInt($(this).val()));
+            c.val(o.c);
+        }  
+        
+    });
+});
+    </script>
