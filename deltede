@@ -1,0 +1,19 @@
+onkeypress='phoneno()'
+
+<script type="text/javascript">
+    function phoneno(){          
+        $('#mobile').keypress(function(e) {
+            var a = [];
+            var k = e.which;
+            for (i = 48; i < 58; i++)
+                a.push(i);
+            if (!(a.indexOf(k)>=0))
+                e.preventDefault();
+        });
+    }
+</script>
+
+<div class="form-group">
+    {!! Form::label('mobile', 'Mobile Number') !!}
+    {!! Form::text('mobile', null, ['class' => 'form-control','minlength'=>10,'maxlength'=>10,'placeholder'=>'Enter Mobile Number','onkeypress'=>'phoneno()']) !!}
+</div>
